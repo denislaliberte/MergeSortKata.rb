@@ -1,5 +1,5 @@
 def sort(input)
-  if (input.count < 2)
+  if input.count <= 1
     result =input
   else 
     middle = input.count / 2
