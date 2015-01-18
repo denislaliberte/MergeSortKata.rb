@@ -2,8 +2,9 @@ def sort(input)
   if input.empty?
     input
   else 
-    a = input.slice(0,1)
-    b = input.slice(1,1)
+    middle = input.count / 2
+    a = input.slice(0,middle)
+    b = input.slice(middle,input.count)
     if a.first > b.first
       [b.first,a.first]
     else
