@@ -1,11 +1,11 @@
 def sort(input)
+  result = []
   if input.count <= 1
     result =input
   else 
     middle = input.count / 2
     a = sort(input.slice(0,middle))
     b = sort(input.slice(middle,input.count))
-    result = []
     while not a.empty? or not b.empty?
       if b.empty?
         result.push(a.shift)
