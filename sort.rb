@@ -1,5 +1,5 @@
 def sort(input)
-  if input.empty?
+  if (input.count < 2)
     input
   else 
     middle = input.count / 2

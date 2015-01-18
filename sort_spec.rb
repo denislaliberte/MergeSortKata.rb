@@ -4,6 +4,9 @@ describe "sort" do
   it "return empty list" do
     expect(sort([])).to eq([])
   end
+  it "return one element list" do
+    expect(sort([1])).to eq([1])
+  end
   it "sort two elements" do
     expect(sort([2,1])).to eq([1,2])
   end
