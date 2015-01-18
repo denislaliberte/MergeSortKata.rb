@@ -3,8 +3,8 @@ def sort(input)
     result =input
   else 
     middle = input.count / 2
-    a = input.slice(0,middle)
-    b = input.slice(middle,input.count)
+    a = sort(input.slice(0,middle))
+    b = sort(input.slice(middle,input.count))
     result = []
     while not a.empty? or not b.empty?
       if b.empty?
